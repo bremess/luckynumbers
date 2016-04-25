@@ -1,0 +1,21 @@
+<style>
+    body {
+        background-color: <%= @color %>;
+    }
+</style>
+
+<h1>Hello <%=@fname%></h1>
+
+<h1>Your lastname is <%=@lname %></h1>
+
+<h2><%= @message %></h2>
+
+<h1>Your number is <%=@nname %></h1>
+
+<% 10.times do |count| %>
+ <div><%= @nname %> * <%= count + 1 %> = <%= @nname * (count + 1) %></div>
+<% end %>
+
+<% @results.each do |result| %>
+    <div><%= result %></div>
+<% end %>
